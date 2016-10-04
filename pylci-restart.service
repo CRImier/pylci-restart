@@ -1,0 +1,12 @@
+[Unit]
+Description=YouTube downloader server
+
+[Service]
+User=root
+Group=root
+ExecStart=/opt/pylci-restart/pylci_restart.py 
+Restart=on-failure
+
+[Install]
+WantedBy=graphical.target
+
